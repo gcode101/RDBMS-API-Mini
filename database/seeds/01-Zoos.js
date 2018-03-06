@@ -4,7 +4,7 @@ exports.seed = function(knex, Promise) {
   return knex('zoos').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
+      return knex('zoos').insert([
         {id: 1, name: 'Atlanta zoo'},
         {id: 2, name: 'Dallas Zoo'},
         {id: 3, name: 'Miami Zoo'}
